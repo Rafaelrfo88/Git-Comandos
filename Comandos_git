@@ -1,0 +1,67 @@
+	Termos usados
+branch = ramificacao
+
+
+________________________________________________________________________________________________
+
+	Comandos
+git init = ira iniciar um repositorio em branco
+git config --global init.defaultBranch main = ira cirar os repositorios com o tipo main
+git status = ira ver o status do repositorio 
+git config -e = ira ver as configuracoes realizadas e podera alterar as mesmas, tem que fazer na pasta que ta configurada o git
+
+git add = ira adicionar o arquivo para ser monitorado
+
+git commit = ira realizar comentarios
+
+git log = ira ver os logs dos comentarios registrados
+git log -p = ira mostrar os logs com mais detalhes, fazendo um comparativo entre eles
+git log --oneline = mostra de forma bem resumida qual foi a modificaca
+
+git diff = mostra a diferenca, o que foi modificado
+git diff (numeros no inicio dos arquivos) = mostra a diferenca, o que foi modificado
+
+git branch (nome da ramificacao) =  ira criar uma nova branch (ramificacao)
+git branch = ira mostrar em qual ramificacao esta
+git branch -d = ira deletar a branch
+git branch -M = renomeia a branch
+
+.gitignore = criando esse arquivo vc podera adicionar os arquivos que deseja ignorar inserindo por:
+-nome
+-extensao
+-pastas/diretorios
+
+git restore --staged log (nome do arquivo) = ira desfazer a acao de adicionar o arquivo indesejado atraves do comando git add
+git reset = caso ja tenha comitado o arquivo e deseja reverter essa acao 
+tem tres tipos para uso com o comando reset:
+-git reset --soft HEAD~1 (quantos commits quer voltar a partir do head) ira reverter apenas o commit
+-git reset --mixed HEAD~1 (ira jogar o arquivo para a area de preparo) 
+-git reset --hard HEAD ~1 (ira remover tudo)
+-git reset (nome da ramificacao) podemos reverter a partir de um ponto especifico
+
+git checkout = serve para alterar entre as branchs (ramificacao)
+git checkout -b = ira alterar para a nova branch, caso nao tenha ira criar 
+
+git stash save  (nome do salvamento) = ao mudar para uma nova branch ira salvar o estado do servico anterior e nao ira importar o arquivo ao alternar para a nova branch, a pendencia nao vai junto ao mudar para a nova branch.
+git stash list = ira mostrar todas as pendencias das outras branch (ramificacoes) 
+
+git merge = ira unir as branch (ramificacoes) a branch principal, ( a que esta selecionada) com o comando git branch
+
+git tag -a = serve para fazer marcacoes
+git tag = visualiza as tags criadas
+
+_________________________________________________________________________________________________
+
+	Comandos de conexao com o github
+git remote add origin + o link da sua pagina do github
+
+Para o que seu repositorio local possa se comunicar com o servidor do githut temos que criar uma chave ssh, fazemos isso com o comando:
+ssh-keygen -o
+
+git push -u origin main =  ira enviar o arquivo para o github
+
+git clone + url do git que deseja clonar 
+
+git pull = ira baixar a alteracao do github para o seu repositorio local
+
+
