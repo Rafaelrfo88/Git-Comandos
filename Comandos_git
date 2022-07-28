@@ -55,7 +55,7 @@ ________________________________________________________________________________
 	Comandos de conexao com o github
 git remote add origin + o link da sua pagina do github
 
-Para o que seu repositorio local possa se comunicar com o servidor do githut temos que criar uma chave ssh, fazemos isso com o comando:
+Para o que seu repositorio local possa se comunicar com o servidor do github temos que criar uma chave ssh, fazemos isso com o comando:
 ssh-keygen -o
 
 git push -u origin main =  ira enviar o arquivo para o github
