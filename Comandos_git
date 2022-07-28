@@ -60,7 +60,7 @@ ssh-keygen -o
 
 git push -u origin main =  ira enviar o arquivo para o github
 
-git clone + url do git que deseja clonar 
+git clone + url do git que deseja clonar = ira realizar um clone do repositorio 
 
 git pull = ira baixar a alteracao do github para o seu repositorio local
 
